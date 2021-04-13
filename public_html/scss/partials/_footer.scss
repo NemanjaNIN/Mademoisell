@@ -1,0 +1,29 @@
+
+$social-bg-color: $primary;
+$social-hover: $pink;
+
+footer{
+    .social{
+        .social-icon {
+            color: $social-bg-color;
+            font-size: 2.2rem;
+            margin-left: 3.2rem;
+            
+           
+            &:first-of-type{
+                margin-left: 0;
+            }
+            &:hover{
+                color: $social-hover;
+            }
+        }
+    }
+    .copyright{
+        font-size: 1.2rem;
+        letter-spacing: -0.17px;
+        line-height: 4.1rem;
+    }
+}
+
+
+

@@ -16,13 +16,40 @@ body{
 
 }
 h1{
-    font-size: 6rem;
-    line-height: 8.4rem;
+    font-size: 2rem;
+    line-height: 3rem;
     font-family: $heading-font;
     font-weight: 300;
-    letter-spacing: 20px;
+    letter-spacing: 5px;
     text-align: center;
     color: $lead-title-color;
+    
+    @media(min-width: 450px){
+
+    font-size: 2.5rem;
+    line-height: 4rem;
+        
+    } 
+    @media(min-width: 576px){
+
+     font-size: 3.5rem;
+     line-height: 4.5rem;
+        
+    } 
+    @media(min-width: 768px){
+
+    font-size: 4rem;
+    line-height: 5rem;
+        
+    } 
+    @media(min-width: 992px){
+
+    font-size: 6rem;
+    line-height: 8.4rem;
+    letter-spacing: 20px;
+        
+    } 
+   
 }
 h2{
     font-size: 3rem;
@@ -30,12 +57,52 @@ h2{
     font-family: $heading-font;
     letter-spacing: 5px;
     font-weight: 300;
+    
+     @media(min-width: 768px){
+
+    font-size: 2rem;
+    line-height: 2.5rem;
+        
+    } 
+    @media(min-width: 992px){
+
+    font-size: 2.5rem;
+    line-height: 3rem;
+   
+    }
+    @media(min-width: 1200px){
+
+        font-size: 3rem;
+        line-height: 4.5rem;
+    
+    }
 }
 h2.section-title{
     font-size: 3.6rem;
     line-height: 4.4rem;
     letter-spacing: normal;
     font-family: $body-font; 
+    
+    @media(min-width: 576px){
+
+     font-size: 2rem;
+     line-height: 2.2rem;
+     letter-spacing: 0;
+        
+    } 
+    @media(min-width: 768px){
+
+     font-size: 3rem;
+     line-height: 3.5rem;
+     letter-spacing: 0;
+        
+    } 
+    @media(min-width: 992px){
+
+     font-size: 3.6rem;
+     line-height: 4.4rem;
+        
+    } 
 }
 
 .title-line:after{

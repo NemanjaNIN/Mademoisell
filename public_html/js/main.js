@@ -1,6 +1,17 @@
 $(document).ready(function () {
 
+//team section owl carousel slider
 
+if ($('.team-slider').length > 0) {
+        $('.team-slider').owlCarousel({
+            items: 1,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            loop: true,
+            mouseDrag: true,
+            lazyLoad: true
+        });
+    }
 
 
 // animation start

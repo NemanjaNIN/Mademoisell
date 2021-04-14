@@ -4,8 +4,12 @@ $navlink-hover-border-bottom: $primary;
 $navlink-hover-color: $primary;
 
 header{
-
-   
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
 
     .navbar-brand{
         max-width: 200px;
@@ -41,7 +45,7 @@ header{
             @media(min-width:992px){
                 margin-left: 72px;
             }//li
-            
+
             a{
                 text-align: center;
                 font-size: 1.4rem;

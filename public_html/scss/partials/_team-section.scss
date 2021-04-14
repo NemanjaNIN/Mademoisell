@@ -1,0 +1,97 @@
+
+
+$team-wrapper-border-color: $primary;
+$team-name-font-family: $lato;
+$dots-bg: $primary;
+
+.team-section{
+    padding: 20px 0;
+
+    @media(min-width: 768px){
+
+        padding: 30px 0;
+    }
+    @media(min-width: 992px){
+
+        padding: 55px 0 67px;
+    }
+    .team-slider {
+        border: 1px solid $team-wrapper-border-color;
+        .team-item-info-name{
+            display: block;
+            font-size: 1.8rem;
+            letter-spacing: 0;
+            font-weight: 400;
+            font-family: $team-name-font-family;
+            line-height: 27px;
+            text-align: left;
+            
+            @media(min-width: 768px){
+
+                font-size: 2rem;
+            }
+            @media(min-width: 992px){
+
+                font-size: 3rem;
+                
+            }
+            @media(min-width: 1200px){
+
+                font-size: 3.5rem;
+            }
+        }//team-item-info-name
+        .team-item-info-bio{
+            font-weight: 300;
+            text-align: left;
+            line-height: 23px;
+            letter-spacing: normal;
+            font-size: 1.6rem;
+            padding-top: 35px;
+        }//team-item-info-bio
+
+
+        .owl-dots{
+            position: absolute;
+            right: 42%;
+            bottom: 0%;
+
+            @media(min-width: 768px){
+
+                position: absolute;
+                right: 39.5%;
+                bottom: 10.5%;
+            }
+            @media(min-width: 992px){
+
+                right: 46%;
+                bottom: 1%;
+            }
+            @media(min-width: 1200px){
+
+                right: 37%;
+                bottom: 8%;
+            }
+
+            .owl-dot.active{
+                span{
+                    background-color: $dots-bg;
+                }//span
+            }//owl dot.active
+            .owl-dot{
+                &:active, &:hover{
+                    span{
+                        background-color: $dots-bg;
+                    }//span
+                }
+                span{
+                    width: 8px;
+                    height: 8px;
+                    background: rgba($dots-bg, 0.34);
+                }//span
+            }//owl dot
+        }//owl-dots
+    }//team-slider
+}//team section
+
+
+

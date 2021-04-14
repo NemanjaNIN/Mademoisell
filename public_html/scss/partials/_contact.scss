@@ -1,0 +1,143 @@
+
+
+//Contact page
+
+$placeholder-text-color: #000;
+$placeholder-font-family: $lato;
+$contact-title-font-family: $bodoni;
+
+
+.contact{
+    padding: 50px 0;
+    @media(min-width: 768px){
+
+        padding: 75px 0;
+    } 
+    @media(min-width: 992px){
+
+        padding: 102px 0 110px;
+    } 
+
+    .contact-wrapper{
+        padding-bottom: 400px;
+        position: relative;
+
+        @media(min-width: 450px){
+
+            padding-bottom: 500px; 
+        } 
+        //@media(min-width: 576px){
+
+        //    padding-bottom: 500px; 
+        //} 
+        @media(min-width: 992px){
+
+             padding-bottom: 0;
+        } 
+        .form-wrapper{
+            h2{
+                font-family: $contact-title-font-family;
+                font-size: 2rem;
+                font-weight: 300;
+                letter-spacing: 5px;
+                line-height: 3.5rem;
+
+                @media(min-width: 992px){
+
+                    width: 95%;
+                    font-size: 3rem;
+                    line-height: 4.5rem;
+                } 
+            }
+            .contact-form{
+                padding-bottom: 35px;
+                .form-group{
+                    &.contact-form-send{
+                        position: absolute;
+                        bottom: 0;
+                        left: 1%;
+                        font-size: 1.4rem;
+                        letter-spacing: 0.5px;
+                        line-height: 1.7rem;
+                    }
+                    .form-control {
+                        font-weight: 300;
+                        letter-spacing: -0.23px;
+                        color: #000;
+                        line-height: 2.5rem;
+                        height: auto;
+                        padding: 12px 20px;
+                        font-size: 1.6rem;
+                        border: none;
+                        border-radius: 0;
+                        color: $placeholder-text-color;
+                        font-family: $placeholder-font-family;
+                    }//form control
+                }//form group            
+            }//contact form
+        }//form wrapper
+        .contact-map{
+            position: absolute;
+            right: 2%;
+            left: 2%;
+            bottom: 0;
+            text-align: right;
+
+            @media(min-width: 992px){
+
+                right: 0;
+                bottom: 0;
+                left: auto;
+            } 
+            @media(min-width: 1200px){
+                right: 0;
+                bottom: 0;
+                text-align: right;
+
+            } 
+            iframe{
+                width: 100%;
+                height: 350px;
+                @media(min-width: 450px){
+
+                    height: 450px;
+                }
+                @media(min-width: 992px){
+
+                    width: 450px;
+                    height: 580px;
+                }
+                @media(min-width: 1200px){
+                    width: 530px;
+                    height: 540px;
+
+                } 
+                @media(min-width: 1500px){
+                    width: 599px;
+                    height: 551px;
+
+                } 
+            }//iframe
+        }//contact map         
+    }//contact wrapper
+}//contact
+
+.info-section{
+    padding: 40px 0;
+    @media(min-width: 768px){
+
+        padding: 63px 0 60px;
+    } 
+
+    p{
+        font-size: 2.4rem;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 2.5rem;
+    }
+}
+
+
+
+
+

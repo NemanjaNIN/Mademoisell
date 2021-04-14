@@ -39,17 +39,19 @@ if ($('.team-slider').length > 0) {
 
 
 
+//Validation
 
     if ($('.contact-form').length > 0) {
+        
         $(function () {
             $(".contact-form").validate({
                 highlight: function (element) {
                     $(element).addClass("is-invalid").removeClass("is-valid");
-                    $(element).closest('.form-group').addClass("is-invalid").removeClass("is-valid");
+                   
                 },
                 unhighlight: function (element) {
                     $(element).removeClass('is-invalid').addClass('is-valid');
-                    $(element).closest('.form-group').addClass("is-valid").removeClass("is-invalid");
+                    
                 },
                 rules: {
                     name: {
@@ -58,6 +60,9 @@ if ($('.team-slider').length > 0) {
                     email: {
                         required: true,
                         email: true
+                    },
+                    subject: {
+                        required: true
                     },
                     message: {
                         required: true,
@@ -73,6 +78,9 @@ if ($('.team-slider').length > 0) {
                         required: 'Email* is required field!!!',
                         email: 'Please insert valid Email address!!!'
                     },
+                    subject: {
+                        required: 'The Subject* is required field.'
+                    },
                     message: {
                         required: 'Message* is required field!!!',
                         maxlength: 'Max Message length is 255 characters !!!'
@@ -87,7 +95,7 @@ if ($('.team-slider').length > 0) {
 
             });
         });
-    }//Form Validation
+    }// Validation
 
 
 

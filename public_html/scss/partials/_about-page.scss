@@ -1,0 +1,79 @@
+
+
+$about-us-title-font-family: $lato;
+$form-control-font: $bodoni;
+$form-placeholder-color: $primary;
+$btn-hover-color:$secondary;
+$form-span-color: $gray-900;
+
+
+.about-us{
+    padding: 70px 0;
+    @media(min-width: 992px){
+
+        padding: 91px 0 78px;
+    }
+    .about-content{
+        h3{
+            font-family: $about-us-title-font-family;
+            font-size: 3rem;
+            letter-spacing: 0;
+            line-height: 4rem;
+            margin-bottom: 20px;
+            text-align: left;
+            @media(min-width: 992px){
+                font-size: 4.4rem;
+                line-height: 5rem;
+                margin-bottom: 40px;
+            }
+        }
+            p{
+                font-family: $about-us-title-font-family;
+                font-weight: 300;
+                font-size: 2rem;
+                line-height: 2.8rem;
+                text-align: left;
+                
+            } 
+            img{
+                padding: 29px 0 66px;
+            }
+
+        }
+
+        .form-group{
+            position: relative;
+            @media(min-width:320px){
+                padding-top: 7rem;
+            }
+            @media(min-width:768px){
+                padding-top: 0;
+            }
+            .form-control {
+                padding: 2rem;
+                font-size: 2rem;
+                font-family: $form-control-font;
+
+
+                &::placeholder{
+                    color: $form-control-font;
+                    font-style: italic;
+                }
+                border: 1px solid #1E1E1E;
+                &:focus{
+                    box-shadow: 0 0 0 0.3% rgba($btn-hover-color, 0.25);
+                }
+            }
+            .form-control-feedback {
+                position: absolute;
+                z-index: 2;
+                color: $form-span-color;
+                font-size: 2rem;
+                right: 22px;
+                bottom: 22px;  
+                
+
+
+            }
+        }
+    }//about us

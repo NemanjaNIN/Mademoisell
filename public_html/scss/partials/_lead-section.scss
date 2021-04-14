@@ -1,29 +1,34 @@
 
 
 .lead-section{
-    padding: 35px;
+    padding: 80px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     
     @media(min-width: 450px){
 
-    padding: 55px;
+    padding: 100px;
         
     } 
     @media(min-width: 576px){
 
-    padding: 80px;
+    padding: 120px;
         
     } 
     @media(min-width: 768px){
 
-    padding: 160px;
+    padding: 180px;
         
     } 
     @media(min-width: 992px){
 
     padding: 218px 0 269px;
+        
+    } 
+    @media(min-width: 1200px){
+
+    padding: 300px 0 350px;
         
     } 
     

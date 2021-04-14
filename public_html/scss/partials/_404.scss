@@ -1,0 +1,31 @@
+
+//404-eror
+
+
+$btn-hover-bacground: $pink;
+
+.lead-section{
+    
+    .lead-item{
+        padding: 140px 0;
+        @media(min-width: 576px){
+
+        padding: 180px 0;
+    } 
+     @media(min-width: 992px){
+
+        padding: 277px 0;
+    } 
+    }
+    
+}
+.error-link{
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    line-height: 1.7rem;
+
+    &.btn-outline-light:hover {
+        color: #fff;
+        background-color: $btn-hover-bacground;
+    }
+}

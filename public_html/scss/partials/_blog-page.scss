@@ -1,0 +1,30 @@
+
+$pagination-font-family: $bodoni;
+$pagination-hover-bg: $pink;
+
+
+//Pagination
+
+.page-item.active {
+    .page-link{
+        color:darken(#1e1e1e, 10%);
+        background-color: transparent;
+        border: none;
+    }
+}
+.page-link{
+    line-height: 2.4rem;
+    color: lighten(#1e1e1e, 20%);
+    font-family: $pagination-font-family;
+    border: none; 
+
+    &:hover {
+        z-index: 2;
+        color: $pagination-hover-color;
+        text-decoration: none;
+        background-color: $pagination-hover-bg;
+        border-color: $pagination-hover-border-color; 
+    }
+}
+
+

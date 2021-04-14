@@ -1,0 +1,63 @@
+
+$services-odd-item-bg: $secondary;
+$services-even-item-bg: $primary;
+
+//Services section
+
+.services-section{
+    padding: 20px 0;
+    @media(min-width: 576px){
+        padding: 10px 0 20px;
+    }
+    @media(min-width: 992px){
+        padding: 50px 0 55px;
+    }
+
+    .services-item{
+        
+        .services-item-content{
+            padding: 80px 60px;
+            text-align: center;
+            
+            @media(min-width: 450px){
+                padding: 130px 80px 130px 70px;
+            }
+            @media(min-width: 576px){
+                padding: 45px 30px 0 50px;
+                text-align: left;
+            }
+            @media(min-width: 992px){
+                padding: 40px 90px;
+            }
+            @media(min-width: 1200px){
+                padding-top: 143px;
+                padding-left: 95px;
+            }
+        }//services-item-content
+        &:nth-of-type(odd){
+
+            div.col-10{
+                .services-item-content{
+                    background-color: $services-odd-item-bg;
+                }//services-item-comtent
+            }//div.col-10 
+        }//odd service content
+        &:nth-of-type(even){
+            .services-item-content{
+                background-color: $services-even-item-bg;
+            }//services-item-content
+        }//even services item
+        @media(min-width: 576px){
+            &:nth-of-type(odd){
+
+                div.col-10{
+                    &:nth-of-type(odd){
+                        order: 2;
+                    }//odd 
+                }//div.col-10
+            }//odd services item
+        }
+    }//services item
+}//services section
+
+

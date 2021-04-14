@@ -1,0 +1,53 @@
+
+$services-single-font-family: $lato;
+
+
+//Single-services
+
+.services-single{
+    padding: 50px 0;
+    @media(min-width: 768px){
+
+        padding: 90px 0;
+    }
+    @media(min-width: 992px){
+
+        padding: 170px 0 181px;
+    }
+    .services-single-photo{
+         @media(min-width: 992px){
+
+        padding-right: 107px;
+    }
+        
+    }
+    
+}
+
+
+.services-single-content{
+
+    h3{
+        font-family: $services-single-font-family;
+        font-weight: 400;
+        font-size: 4.4rem;
+        line-height: 5rem;
+        letter-spacing: normal;
+        text-align: left;
+        margin-bottom: 25px;
+        
+    }
+    p{
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        letter-spacing: normal;
+        text-align: left;
+        
+        
+    }
+}
+
+
+    
+
